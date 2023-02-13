@@ -27,6 +27,13 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'awesome_print'
+  gem 'dotenv-rails'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'rubocop'
 end
 
 group :development do
@@ -37,4 +44,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'simplecov'
+  gem 'vcr'
 end
